@@ -60,6 +60,10 @@
       width: min(1360px, 85vw);
       margin-inline: auto;
     }
+    .voices-shell {
+      width: min(1360px, 88vw);
+      margin-inline: auto;
+    }
     .hero-panel::before {
       content: "";
       position: absolute;
@@ -119,6 +123,18 @@
       box-shadow: 0 26px 44px rgba(109, 169, 228, 0.18);
       background-color: rgba(255, 255, 255, 0.97);
       border-color: rgba(142, 204, 160, 0.3);
+    }
+    .voice-card {
+      transition:
+        transform 260ms ease,
+        box-shadow 260ms ease,
+        border-color 260ms ease;
+      border: 1px solid rgba(148, 163, 184, 0.12);
+    }
+    .voice-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 22px 40px rgba(109, 169, 228, 0.16);
+      border-color: rgba(148, 200, 236, 0.35);
     }
     .mini-accent {
       width: 46px;
@@ -424,7 +440,7 @@
     </section>
 
     <section class="py-6 sm:py-10">
-      <div class="shell">
+      <div class="voices-shell">
         <div class="text-center">
           <div class="section-heading">
             <span class="section-leaf text-[#9ec7ef]" aria-hidden="true">
@@ -446,8 +462,8 @@
             </span>
           </div>
         </div>
-        <div class="mt-8 grid gap-8 lg:grid-cols-3 xl:gap-10">
-          <article class="rounded-[1.6rem] border border-zinc-100 bg-white p-5 shadow-card">
+        <div class="mt-8 grid gap-8 lg:grid-cols-3 xl:gap-12">
+          <article class="voice-card rounded-[1.6rem] bg-white p-6 shadow-card xl:p-7">
             <div class="flex items-center gap-4">
               <img src="./assets/generated/voice-t.png" alt="鹿児島市・T様" class="h-24 w-24 shrink-0 rounded-full bg-[#fff4de] object-cover ring-4 ring-white shadow-md" />
               <div>
@@ -457,7 +473,7 @@
             </div>
           </article>
 
-          <article class="rounded-[1.6rem] border border-zinc-100 bg-white p-5 shadow-card">
+          <article class="voice-card rounded-[1.6rem] bg-white p-6 shadow-card xl:p-7">
             <div class="flex items-center gap-4">
               <img src="./assets/generated/voice-k.png" alt="姶良市・K様" class="h-24 w-24 shrink-0 rounded-full bg-[#eef7e8] object-cover ring-4 ring-white shadow-md" />
               <div>
@@ -467,7 +483,7 @@
             </div>
           </article>
 
-          <article class="rounded-[1.6rem] border border-zinc-100 bg-white p-5 shadow-card">
+          <article class="voice-card rounded-[1.6rem] bg-white p-6 shadow-card xl:p-7">
             <div class="flex items-center gap-4">
               <img src="./assets/generated/voice-n.png" alt="霧島市・N様" class="h-24 w-24 shrink-0 rounded-full bg-[#fff0ef] object-cover ring-4 ring-white shadow-md" />
               <div>
