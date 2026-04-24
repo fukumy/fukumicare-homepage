@@ -56,9 +56,28 @@
       position: absolute;
       inset: 0;
       background:
-        linear-gradient(90deg, rgba(255,255,255,0.96) 0%, rgba(255,255,255,0.9) 26%, rgba(255,255,255,0.35) 50%, rgba(255,255,255,0) 67%),
+        linear-gradient(90deg, rgba(255,255,255,0.97) 0%, rgba(255,255,255,0.93) 28%, rgba(255,255,255,0.58) 48%, rgba(255,255,255,0.15) 66%, rgba(255,255,255,0.02) 76%),
         radial-gradient(circle at 8% 20%, rgba(184, 230, 196, 0.34), transparent 18%);
       pointer-events: none;
+    }
+    .hero-photo {
+      position: absolute;
+      inset: 0;
+      background-image: url("./assets/generated/fukumi-hero.png");
+      background-position: 72% center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: scale(1.02);
+    }
+    @media (max-width: 1023px) {
+      .hero-photo {
+        background-position: 64% center;
+      }
+      .hero-panel::before {
+        background:
+          linear-gradient(180deg, rgba(255,255,255,0.86) 0%, rgba(255,255,255,0.7) 42%, rgba(255,255,255,0.5) 100%),
+          radial-gradient(circle at 10% 14%, rgba(184, 230, 196, 0.3), transparent 24%);
+      }
     }
     .mini-accent {
       width: 46px;
@@ -117,8 +136,9 @@
 
   <main id="main">
     <section id="top" class="relative overflow-hidden border-b border-sky-100 bg-white">
+      <div class="hero-photo" aria-hidden="true"></div>
       <div class="hero-panel absolute inset-0"></div>
-      <div class="shell relative grid items-center gap-10 py-10 lg:min-h-[620px] lg:grid-cols-[1.02fr_.98fr] lg:py-0">
+      <div class="shell relative flex min-h-[560px] items-center py-10 sm:min-h-[620px] lg:min-h-[620px] lg:py-0">
         <div class="relative z-10 max-w-xl py-2 lg:py-14">
           <h1 class="text-[3rem] font-bold leading-[1.2] tracking-[0.04em] text-brandBlue sm:text-[4rem] lg:text-[4.8rem]">
             大切な人を、<br />
@@ -145,9 +165,6 @@
               <svg class="h-5 w-5 text-brandGreen" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M7.3 4.3a1 1 0 0 0 0 1.4L11.6 10l-4.3 4.3a1 1 0 1 0 1.4 1.4l5-5a1 1 0 0 0 0-1.4l-5-5a1 1 0 0 0-1.4 0Z" /></svg>
             </a>
           </div>
-        </div>
-        <div class="relative z-10 flex items-end justify-center py-4 lg:py-0">
-          <img src="./assets/generated/fukumi-hero.png" alt="利用者さまと介護スタッフ" class="h-auto w-full max-w-[560px] animate-floaty rounded-[2rem] object-cover" />
         </div>
       </div>
     </section>
@@ -261,14 +278,8 @@
           </div>
           <div class="mt-10 grid gap-8 lg:grid-cols-3">
             <article class="grid gap-4 rounded-[1.6rem] bg-white/70 p-4 md:grid-cols-[92px_1fr] md:items-center">
-              <div class="mx-auto inline-flex h-[92px] w-[92px] items-center justify-center rounded-full border border-emerald-200 text-brandGreen">
-                <svg class="h-14 w-14" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="2.3" aria-hidden="true">
-                  <circle cx="28" cy="28" r="25" class="opacity-15"></circle>
-                  <path d="M14 30 28 18l14 12"></path>
-                  <path d="M18 28v12h20V28"></path>
-                  <path d="M24 40v-8h8v8"></path>
-                  <path d="M10 40h36"></path>
-                </svg>
+              <div class="mx-auto inline-flex h-[92px] w-[92px] items-center justify-center rounded-full border border-emerald-200 bg-white/90 p-4 text-brandGreen shadow-sm">
+                <img src="./assets/generated/reason-community.png" alt="" class="h-full w-full object-contain" aria-hidden="true" />
               </div>
               <div class="text-center md:text-left">
                 <h3 class="text-[2rem] font-bold text-brandGreenDeep">地域密着</h3>
@@ -277,14 +288,8 @@
             </article>
 
             <article class="grid gap-4 rounded-[1.6rem] bg-white/70 p-4 md:grid-cols-[92px_1fr] md:items-center">
-              <div class="mx-auto inline-flex h-[92px] w-[92px] items-center justify-center rounded-full border border-emerald-200 text-brandGreen">
-                <svg class="h-14 w-14" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="2.3" aria-hidden="true">
-                  <circle cx="28" cy="28" r="25" class="opacity-15"></circle>
-                  <circle cx="28" cy="21" r="7"></circle>
-                  <path d="M17 40c2.5-6 7-9 11-9s8.5 3 11 9"></path>
-                  <path d="M21 42v-5"></path>
-                  <path d="M35 42v-5"></path>
-                </svg>
+              <div class="mx-auto inline-flex h-[92px] w-[92px] items-center justify-center rounded-full border border-emerald-200 bg-white/90 p-4 text-brandGreen shadow-sm">
+                <img src="./assets/generated/reason-staff.png" alt="" class="h-full w-full object-contain" aria-hidden="true" />
               </div>
               <div class="text-center md:text-left">
                 <h3 class="text-[2rem] font-bold text-brandGreenDeep">経験豊富なスタッフ</h3>
@@ -293,14 +298,8 @@
             </article>
 
             <article class="grid gap-4 rounded-[1.6rem] bg-white/70 p-4 md:grid-cols-[92px_1fr] md:items-center">
-              <div class="mx-auto inline-flex h-[92px] w-[92px] items-center justify-center rounded-full border border-emerald-200 text-brandGreen">
-                <svg class="h-14 w-14" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="2.3" aria-hidden="true">
-                  <circle cx="28" cy="28" r="25" class="opacity-15"></circle>
-                  <path d="M18 30c0-6 4-11 10-11 5.5 0 10 4 10 9.5S34 39 28 39h-8l4-5"></path>
-                  <path d="M33 16l5 5-5 5"></path>
-                  <path d="M23 23v9"></path>
-                  <path d="M21 32h7"></path>
-                </svg>
+              <div class="mx-auto inline-flex h-[92px] w-[92px] items-center justify-center rounded-full border border-emerald-200 bg-white/90 p-4 text-brandGreen shadow-sm">
+                <img src="./assets/generated/reason-24h.png" alt="" class="h-full w-full object-contain" aria-hidden="true" />
               </div>
               <div class="text-center md:text-left">
                 <h3 class="text-[2rem] font-bold text-brandGreenDeep">安心の24時間体制</h3>
@@ -410,7 +409,7 @@
           <span class="text-4xl font-bold tracking-wide text-brandBlue">ふくみーケア</span>
         </div>
         <p class="mt-5 text-xl leading-10 text-zinc-700">地域に寄り添う、<br />やさしい在宅ケアを。</p>
-        <img src="./assets/generated/footer-town-scene.svg" alt="街並みのイメージ" class="mt-6 w-full max-w-[320px]" />
+        <img src="./assets/generated/fukumi-futter.png" alt="街並みのイメージ" class="mt-6 w-full max-w-[360px]" />
       </div>
 
       <nav aria-label="フッターメニュー">
