@@ -105,6 +105,17 @@
       height: 100%;
       display: block;
     }
+    .reason-card {
+      transition:
+        transform 260ms ease,
+        box-shadow 260ms ease,
+        background-color 260ms ease;
+    }
+    .reason-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 22px 40px rgba(109, 169, 228, 0.14);
+      background-color: rgba(255, 255, 255, 0.92);
+    }
     .mini-accent {
       width: 46px;
       height: 4px;
@@ -304,7 +315,7 @@
 
     <section class="py-4 sm:py-8">
       <div class="reason-shell">
-        <div class="rounded-[2rem] bg-gradient-to-br from-[#fbfbf6] to-[#f7fbf5] px-6 py-10 shadow-card sm:px-10">
+        <div class="rounded-[2rem] bg-gradient-to-br from-[#fbfbf6] to-[#f7fbf5] px-8 py-12 shadow-card sm:px-12 sm:py-14">
           <div class="text-center">
             <div class="section-heading">
               <span class="section-leaf" aria-hidden="true">
@@ -326,9 +337,9 @@
               </span>
             </div>
           </div>
-          <div class="mt-10 grid gap-8 lg:grid-cols-3">
-            <article class="grid gap-6 rounded-[1.6rem] bg-white/70 p-4 md:grid-cols-[144px_1fr] md:items-center">
-              <div class="mx-auto flex h-[144px] w-[144px] items-center justify-center">
+          <div class="mt-12 grid gap-10 lg:grid-cols-3">
+            <article class="reason-card grid gap-7 rounded-[1.9rem] bg-white/78 p-7 md:grid-cols-[156px_1fr] md:items-center md:p-8">
+              <div class="mx-auto flex h-[156px] w-[156px] items-center justify-center">
                 <img src="./assets/generated/reason-community.png" alt="" class="h-[118px] w-[118px] object-contain" aria-hidden="true" />
               </div>
               <div class="text-center md:text-left">
@@ -337,8 +348,8 @@
               </div>
             </article>
 
-            <article class="grid gap-6 rounded-[1.6rem] bg-white/70 p-4 md:grid-cols-[144px_1fr] md:items-center">
-              <div class="mx-auto flex h-[144px] w-[144px] items-center justify-center">
+            <article class="reason-card grid gap-7 rounded-[1.9rem] bg-white/78 p-7 md:grid-cols-[156px_1fr] md:items-center md:p-8">
+              <div class="mx-auto flex h-[156px] w-[156px] items-center justify-center">
                 <img src="./assets/generated/reason-staff.png" alt="" class="h-[118px] w-[118px] object-contain" aria-hidden="true" />
               </div>
               <div class="text-center md:text-left">
@@ -347,8 +358,8 @@
               </div>
             </article>
 
-            <article class="grid gap-6 rounded-[1.6rem] bg-white/70 p-4 md:grid-cols-[144px_1fr] md:items-center">
-              <div class="mx-auto flex h-[144px] w-[144px] items-center justify-center">
+            <article class="reason-card grid gap-7 rounded-[1.9rem] bg-white/78 p-7 md:grid-cols-[156px_1fr] md:items-center md:p-8">
+              <div class="mx-auto flex h-[156px] w-[156px] items-center justify-center">
                 <img src="./assets/generated/reason-24h.png" alt="" class="h-[118px] w-[118px] object-contain" aria-hidden="true" />
               </div>
               <div class="text-center md:text-left">
