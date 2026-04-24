@@ -17,32 +17,26 @@
             brandGreenDeep: "#4ea36f",
             brandPink: "#f59fb2",
             brandLavender: "#b49cec",
-            baseCream: "#fcfaf5",
-            ink: "#232323",
+            ink: "#232323"
           },
           boxShadow: {
             soft: "0 18px 42px rgba(109, 169, 228, 0.18)",
-            card: "0 14px 34px rgba(35, 35, 35, 0.08)",
+            card: "0 14px 34px rgba(35, 35, 35, 0.08)"
           },
           fontFamily: {
-            sans: ['"Hiragino Sans"', '"Yu Gothic"', '"Meiryo"', "sans-serif"],
+            sans: ['"Hiragino Sans"', '"Yu Gothic"', '"Meiryo"', "sans-serif"]
           },
           keyframes: {
             floaty: {
               "0%, 100%": { transform: "translateY(0px)" },
-              "50%": { transform: "translateY(-6px)" },
-            },
-            pulseSoft: {
-              "0%, 100%": { transform: "scale(1)", opacity: "1" },
-              "50%": { transform: "scale(1.03)", opacity: ".92" },
-            },
+              "50%": { transform: "translateY(-6px)" }
+            }
           },
           animation: {
-            floaty: "floaty 5.5s ease-in-out infinite",
-            pulseSoft: "pulseSoft 4.2s ease-in-out infinite",
-          },
-        },
-      },
+            floaty: "floaty 5.5s ease-in-out infinite"
+          }
+        }
+      }
     };
   </script>
   <style>
@@ -84,12 +78,7 @@
   <header class="sticky top-0 z-50 border-b border-sky-100/80 bg-white/90 backdrop-blur-md">
     <div class="shell flex items-center justify-between gap-4 py-4">
       <a href="#top" class="flex min-w-0 items-center gap-3" aria-label="ふくみーケア ホーム">
-        <svg class="h-10 w-11 sm:h-12 sm:w-12" viewBox="0 0 52 48" fill="none" aria-hidden="true">
-          <path d="M15.8 8.8C10.1 8.8 5.5 13.1 5.5 18.6c0 11.6 14.8 17.8 20.2 23.9 5.4-6.1 20.2-12.3 20.2-23.9 0-5.5-4.6-9.8-10.3-9.8-3.6 0-7 1.8-9.9 5-2.9-3.2-6.4-5-9.9-5Z" fill="#9ED8A6"/>
-          <path d="M24.5 6c-2.1-2.1-5.1-3.5-8.2-3.5-6.4 0-11.5 5-11.5 11.1 0 3.4 1.4 6.6 4 9 2.8 2.7 7.9 6.2 14 10.2l3.1 2 3.1-2c6.1-4 11.2-7.5 14-10.2 2.6-2.4 4-5.6 4-9C47 7.5 41.8 2.5 35.5 2.5c-3.2 0-6.1 1.3-8.3 3.5L26 7.3 24.5 6Z" stroke="#74AEE4" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M19.5 27.5V18l6.8-5.5 6.7 5.5v9.5" stroke="#74AEE4" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M23.4 27.5v-4.6h5.8v4.6" stroke="#74AEE4" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <img src="./assets/generated/fukumi-logo.png" alt="ふくみーケアのロゴ" class="h-10 w-11 object-contain sm:h-12 sm:w-12" />
         <span class="truncate text-[1.9rem] font-bold tracking-wide text-brandBlue sm:text-3xl">ふくみーケア</span>
       </a>
 
@@ -157,96 +146,8 @@
             </a>
           </div>
         </div>
-
         <div class="relative z-10 flex items-end justify-center py-4 lg:py-0">
-          <svg class="h-auto w-full max-w-[560px] animate-floaty" viewBox="0 0 560 500" aria-label="利用者さまと介護スタッフのイラスト">
-            <defs>
-              <linearGradient id="bgSoft" x1="0" x2="1">
-                <stop offset="0%" stop-color="#f7fbf7"/>
-                <stop offset="55%" stop-color="#ffffff"/>
-                <stop offset="100%" stop-color="#fff5ea"/>
-              </linearGradient>
-              <radialGradient id="hairDark" cx="50%" cy="38%" r="70%">
-                <stop offset="0%" stop-color="#6f554b"/>
-                <stop offset="100%" stop-color="#4f392f"/>
-              </radialGradient>
-              <radialGradient id="hairGray" cx="50%" cy="38%" r="70%">
-                <stop offset="0%" stop-color="#d6d7d9"/>
-                <stop offset="100%" stop-color="#a8aaad"/>
-              </radialGradient>
-              <linearGradient id="skinA" x1="0" x2="1">
-                <stop offset="0%" stop-color="#f6d3b9"/>
-                <stop offset="100%" stop-color="#f2c5a5"/>
-              </linearGradient>
-              <linearGradient id="skinB" x1="0" x2="1">
-                <stop offset="0%" stop-color="#f6d8c0"/>
-                <stop offset="100%" stop-color="#efc2a0"/>
-              </linearGradient>
-              <linearGradient id="shirtBlue" x1="0" x2="1">
-                <stop offset="0%" stop-color="#c8e3fb"/>
-                <stop offset="100%" stop-color="#98c9f3"/>
-              </linearGradient>
-              <linearGradient id="cardigan" x1="0" x2="1">
-                <stop offset="0%" stop-color="#efe3d6"/>
-                <stop offset="100%" stop-color="#e1d3c2"/>
-              </linearGradient>
-              <filter id="softShadow" x="-20%" y="-20%" width="140%" height="160%">
-                <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#9db4c2" flood-opacity="0.18"/>
-              </filter>
-            </defs>
-
-            <rect x="58" y="10" width="472" height="458" rx="34" fill="url(#bgSoft)"/>
-            <circle cx="84" cy="120" r="48" fill="#eef9f1"/>
-            <circle cx="476" cy="86" r="58" fill="#f2faef"/>
-            <circle cx="504" cy="194" r="24" fill="#f8efd9"/>
-            <rect x="448" y="270" width="46" height="138" rx="23" fill="#f0d7b6" opacity=".7"/>
-            <rect x="470" y="236" width="28" height="174" rx="14" fill="#f5e6cf" opacity=".7"/>
-            <circle cx="415" cy="72" r="16" fill="#b7d994"/>
-            <circle cx="454" cy="122" r="12" fill="#9dcc86"/>
-            <circle cx="497" cy="144" r="11" fill="#a4d284"/>
-            <circle cx="96" cy="72" r="18" fill="#d9efe0"/>
-            <circle cx="48" cy="200" r="16" fill="#e4f4e8"/>
-
-            <g filter="url(#softShadow)">
-              <ellipse cx="288" cy="425" rx="170" ry="22" fill="#e4eef3"/>
-            </g>
-
-            <g transform="translate(145 72)">
-              <ellipse cx="102" cy="84" rx="78" ry="80" fill="url(#hairGray)"/>
-              <ellipse cx="104" cy="95" rx="58" ry="68" fill="url(#skinA)"/>
-              <path d="M50 85c5-42 38-71 76-71 25 0 48 12 60 30-14-6-24-11-43-10-26 0-56 17-70 51Z" fill="#eef0f2" opacity=".9"/>
-              <path d="M58 114c9 16 24 24 45 24 18 0 32-6 43-18" stroke="#d59a90" stroke-width="4" stroke-linecap="round"/>
-              <path d="M78 91c8-8 18-8 26 0" stroke="#6b5148" stroke-width="4" stroke-linecap="round"/>
-              <path d="M122 91c8-8 18-8 26 0" stroke="#6b5148" stroke-width="4" stroke-linecap="round"/>
-              <circle cx="92" cy="99" r="4.5" fill="#4d403c"/>
-              <circle cx="138" cy="99" r="4.5" fill="#4d403c"/>
-              <path d="M114 104c-4 10-5 18-2 26" stroke="#d9a89d" stroke-width="3.5" stroke-linecap="round"/>
-              <path d="M36 204c0-50 35-88 83-88 56 0 95 36 95 102v128H12V227c0-7 5-13 12-13h12Z" fill="url(#cardigan)"/>
-              <path d="M76 201c6 19 11 33 24 49 12-14 19-28 27-49" fill="#fffaf5"/>
-              <rect x="76" y="171" width="52" height="44" rx="24" fill="url(#skinA)"/>
-              <rect x="66" y="216" width="82" height="132" rx="28" fill="#fffaf8"/>
-              <circle cx="120" cy="268" r="5" fill="#dbd0c4"/>
-              <circle cx="120" cy="304" r="5" fill="#dbd0c4"/>
-            </g>
-
-            <g transform="translate(287 38)">
-              <ellipse cx="103" cy="72" rx="74" ry="79" fill="url(#hairDark)"/>
-              <path d="M50 98c-2-54 28-92 79-92 38 0 68 18 79 55-9-8-17-15-31-18 4 20 3 28-2 42-12-34-33-55-67-58-23 2-42 12-58 31Z" fill="#4b352c"/>
-              <ellipse cx="103" cy="104" rx="57" ry="69" fill="url(#skinB)"/>
-              <path d="M58 109c8-7 17-7 25 0" stroke="#5b443c" stroke-width="4" stroke-linecap="round"/>
-              <path d="M122 109c8-7 17-7 25 0" stroke="#5b443c" stroke-width="4" stroke-linecap="round"/>
-              <circle cx="72" cy="116" r="4.4" fill="#453631"/>
-              <circle cx="136" cy="116" r="4.4" fill="#453631"/>
-              <path d="M86 147c10 15 24 23 43 23 16 0 30-6 40-17" stroke="#d48f83" stroke-width="4" stroke-linecap="round"/>
-              <path d="M104 121c-4 10-4 20-1 29" stroke="#dcaf9f" stroke-width="3.4" stroke-linecap="round"/>
-              <path d="M174 87c16 34 22 92 12 153" stroke="#5b4037" stroke-width="16" stroke-linecap="round"/>
-              <path d="M26 235c0-59 39-101 95-101 59 0 110 45 110 112v104H10V248c0-7 5-13 12-13h4Z" fill="url(#shirtBlue)"/>
-              <rect x="70" y="194" width="56" height="52" rx="26" fill="url(#skinB)"/>
-              <path d="M57 215c12 13 23 28 31 47 12-19 20-36 36-48" fill="#e6f3ff"/>
-              <path d="M30 241c48 9 79 24 108 57" stroke="url(#skinB)" stroke-width="18" stroke-linecap="round"/>
-              <path d="M123 289c-4 22-4 42 4 63" stroke="url(#skinB)" stroke-width="18" stroke-linecap="round"/>
-            </g>
-          </svg>
+          <img src="./assets/generated/fukumi-hero.png" alt="利用者さまと介護スタッフ" class="h-auto w-full max-w-[560px] animate-floaty rounded-[2rem] object-cover" />
         </div>
       </div>
     </section>
@@ -262,25 +163,11 @@
             <span class="h-px w-10 bg-emerald-200"></span>
           </div>
         </div>
-
         <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           <article class="overflow-hidden rounded-[1.6rem] border border-zinc-100 bg-white shadow-card transition duration-300 hover:-translate-y-2 hover:shadow-xl">
             <div class="relative p-3">
               <div class="rounded-[1.2rem] bg-gradient-to-br from-[#f3fbff] to-[#ffffff] p-3">
-                <svg class="h-52 w-full sm:h-56" viewBox="0 0 240 170" aria-hidden="true">
-                  <rect width="240" height="170" rx="22" fill="#ffffff"/>
-                  <rect x="0" y="0" width="90" height="170" fill="#f4fbff"/>
-                  <rect x="18" y="26" width="56" height="88" rx="10" fill="#e7f2f9"/>
-                  <rect x="26" y="34" width="40" height="10" rx="5" fill="#c8deec"/>
-                  <circle cx="130" cy="60" r="20" fill="#f4d1b5"/>
-                  <path d="M112 49c6-16 31-19 39-4-5 1-8 0-11 6-8-3-17-4-28-2Z" fill="#4f3a31"/>
-                  <rect x="111" y="82" width="38" height="52" rx="14" fill="#cce5fb"/>
-                  <circle cx="177" cy="86" r="23" fill="#f2cfb0"/>
-                  <path d="M154 80c5-25 36-34 53-16-23-1-29 3-38 16Z" fill="#b7b9bc"/>
-                  <rect x="151" y="108" width="54" height="38" rx="18" fill="#f6f0e7"/>
-                  <path d="M132 103c18 7 24 18 29 34" stroke="#f2cfb0" stroke-width="14" stroke-linecap="round"/>
-                  <path d="M98 120c-14 6-22 14-28 25" stroke="#cce5fb" stroke-width="14" stroke-linecap="round"/>
-                </svg>
+                <img src="./assets/generated/service-bodycare.png" alt="身体介護のイメージ" class="h-52 w-full rounded-[1rem] object-cover sm:h-56" />
               </div>
               <div class="absolute left-6 top-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-sky-100 text-brandBlue shadow-md">
                 <svg class="h-9 w-9" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
@@ -302,23 +189,7 @@
           <article class="overflow-hidden rounded-[1.6rem] border border-zinc-100 bg-white shadow-card transition duration-300 hover:-translate-y-2 hover:shadow-xl">
             <div class="relative p-3">
               <div class="rounded-[1.2rem] bg-gradient-to-br from-[#f4fff6] to-[#fffdf8] p-3">
-                <svg class="h-52 w-full sm:h-56" viewBox="0 0 240 170" aria-hidden="true">
-                  <rect width="240" height="170" rx="22" fill="#fff"/>
-                  <rect x="18" y="112" width="58" height="36" rx="6" fill="#d6f1dd"/>
-                  <rect x="22" y="98" width="52" height="18" rx="5" fill="#f5f0d1"/>
-                  <rect x="68" y="54" width="16" height="94" rx="8" fill="#c1b59f"/>
-                  <rect x="78" y="54" width="10" height="94" rx="5" fill="#d9d0bb"/>
-                  <circle cx="140" cy="46" r="19" fill="#f4d1b7"/>
-                  <path d="M123 39c10-19 34-16 40 2-18-1-26 0-40-2Z" fill="#4c372f"/>
-                  <rect x="122" y="66" width="38" height="48" rx="14" fill="#f7faf7"/>
-                  <path d="M112 72l52 0 8 76-68 0Z" fill="#d4d7d8"/>
-                  <path d="M138 73v75" stroke="#ffffff" stroke-width="6"/>
-                  <path d="M112 108c-20-1-34 3-49 14" stroke="#f1d0b3" stroke-width="12" stroke-linecap="round"/>
-                  <path d="M166 99c18 5 28 11 41 20" stroke="#f1d0b3" stroke-width="12" stroke-linecap="round"/>
-                  <circle cx="188" cy="50" r="18" fill="#e0f4e4"/>
-                  <path d="M174 59l14-13 14 13" stroke="#77c892" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M180 58v10h16V58" stroke="#77c892" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <img src="./assets/generated/service-lifecare.png" alt="生活援助のイメージ" class="h-52 w-full rounded-[1rem] object-cover sm:h-56" />
               </div>
               <div class="absolute left-6 top-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-emerald-100 text-brandGreen shadow-md">
                 <svg class="h-9 w-9" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
@@ -338,19 +209,7 @@
           <article class="overflow-hidden rounded-[1.6rem] border border-zinc-100 bg-white shadow-card transition duration-300 hover:-translate-y-2 hover:shadow-xl">
             <div class="relative p-3">
               <div class="rounded-[1.2rem] bg-gradient-to-br from-[#fff4f7] to-[#fffdf9] p-3">
-                <svg class="h-52 w-full sm:h-56" viewBox="0 0 240 170" aria-hidden="true">
-                  <rect width="240" height="170" rx="22" fill="#fff"/>
-                  <rect x="152" y="20" width="64" height="124" rx="14" fill="#faefe4"/>
-                  <rect x="164" y="48" width="10" height="86" rx="5" fill="#e8dbc9"/>
-                  <circle cx="84" cy="78" r="20" fill="#f4d2b8"/>
-                  <path d="M67 71c8-19 31-22 40-5-10 0-18 1-40 5Z" fill="#49352f"/>
-                  <rect x="66" y="100" width="42" height="48" rx="14" fill="#cde5fb"/>
-                  <circle cx="154" cy="64" r="23" fill="#f1cfb2"/>
-                  <path d="M131 61c4-24 37-31 52-14-8-1-13 1-19 4-8-3-19 0-33 10Z" fill="#b8babd"/>
-                  <rect x="127" y="94" width="58" height="54" rx="18" fill="#f6eee4"/>
-                  <path d="M108 117c16 1 28 6 35 18" stroke="#f1cfb2" stroke-width="12" stroke-linecap="round"/>
-                  <path d="M146 122c-14 4-24 11-30 20" stroke="#f1cfb2" stroke-width="12" stroke-linecap="round"/>
-                </svg>
+                <img src="./assets/generated/service-dementia.png" alt="認知症ケアのイメージ" class="h-52 w-full rounded-[1rem] object-cover sm:h-56" />
               </div>
               <div class="absolute left-6 top-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-rose-100 text-brandPink shadow-md">
                 <svg class="h-9 w-9" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
@@ -368,15 +227,7 @@
           <article class="overflow-hidden rounded-[1.6rem] border border-zinc-100 bg-white shadow-card transition duration-300 hover:-translate-y-2 hover:shadow-xl">
             <div class="relative p-3">
               <div class="rounded-[1.2rem] bg-gradient-to-br from-[#f7f2ff] to-[#fffdfd] p-3">
-                <svg class="h-52 w-full sm:h-56" viewBox="0 0 240 170" aria-hidden="true">
-                  <rect width="240" height="170" rx="22" fill="#fff"/>
-                  <path d="M60 92c24-12 46-4 60 14 13-18 35-26 60-14-1 29-26 49-60 63-33-14-58-34-60-63Z" fill="#ffdbe6"/>
-                  <path d="M120 154c-34-14-59-34-60-63 24-12 46-4 60 14 13-18 35-26 60-14-1 29-26 49-60 63Z" fill="#f5a1b2"/>
-                  <path d="M36 83c20 6 38 14 56 31" stroke="#f7d8c7" stroke-width="18" stroke-linecap="round"/>
-                  <path d="M205 83c-20 6-38 14-56 31" stroke="#f7d8c7" stroke-width="18" stroke-linecap="round"/>
-                  <path d="M53 65c16 8 28 19 37 33" stroke="#f9e5d9" stroke-width="18" stroke-linecap="round"/>
-                  <path d="M188 65c-16 8-28 19-37 33" stroke="#f9e5d9" stroke-width="18" stroke-linecap="round"/>
-                </svg>
+                <img src="./assets/generated/service-24h.png" alt="24時間対応のイメージ" class="h-52 w-full rounded-[1rem] object-cover sm:h-56" />
               </div>
               <div class="absolute left-6 top-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-violet-100 text-brandLavender shadow-md">
                 <svg class="h-9 w-9" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
@@ -499,18 +350,10 @@
             <span class="text-brandBlue">❧</span>
           </div>
         </div>
-
         <div class="mt-8 grid gap-5 lg:grid-cols-3">
           <article class="rounded-[1.6rem] border border-zinc-100 bg-white p-5 shadow-card">
             <div class="flex items-center gap-4">
-              <svg class="h-24 w-24 shrink-0 rounded-full bg-[#fff4de] ring-4 ring-white shadow-md" viewBox="0 0 96 96" aria-hidden="true">
-                <circle cx="48" cy="48" r="48" fill="#fff4de"/>
-                <ellipse cx="48" cy="37" rx="20" ry="22" fill="#f3cfb0"/>
-                <path d="M27 33c2-18 20-29 37-21 7 4 12 10 14 19-8-8-18-11-29-9-6 1-13 4-22 11Z" fill="#6a564e"/>
-                <path d="M28 77c4-17 18-27 36-27s31 10 36 27" fill="#d9e8f7"/>
-                <path d="M38 43c3-3 7-3 10 0M53 43c3-3 7-3 10 0" stroke="#4d403c" stroke-width="3" stroke-linecap="round"/>
-                <path d="M40 56c5 5 11 8 18 8 5 0 10-2 15-6" stroke="#d98d83" stroke-width="3.5" stroke-linecap="round"/>
-              </svg>
+              <img src="./assets/generated/voice-t.png" alt="鹿児島市・T様" class="h-24 w-24 shrink-0 rounded-full bg-[#fff4de] object-cover ring-4 ring-white shadow-md" />
               <div>
                 <h3 class="text-[1.8rem] font-bold text-brandBlue">鹿児島市・T様</h3>
                 <p class="mt-3 text-lg leading-9 text-zinc-700">母が自宅で穏やかに過ごせるようになり、とても安心しています。</p>
@@ -524,14 +367,7 @@
 
           <article class="rounded-[1.6rem] border border-zinc-100 bg-white p-5 shadow-card">
             <div class="flex items-center gap-4">
-              <svg class="h-24 w-24 shrink-0 rounded-full bg-[#eef7e8] ring-4 ring-white shadow-md" viewBox="0 0 96 96" aria-hidden="true">
-                <circle cx="48" cy="48" r="48" fill="#eef7e8"/>
-                <ellipse cx="48" cy="38" rx="19" ry="22" fill="#f0cdaa"/>
-                <path d="M29 33c1-14 12-26 29-26 14 0 24 6 30 18-16-2-28 0-44 8-5 2-10 2-15 0Z" fill="#76706d"/>
-                <path d="M27 77c5-17 18-27 36-27s31 10 36 27" fill="#dde7d7"/>
-                <path d="M39 44c3-3 7-3 10 0M54 44c3-3 7-3 10 0" stroke="#524540" stroke-width="3" stroke-linecap="round"/>
-                <path d="M39 58c6 4 11 6 18 6 4 0 8-1 14-5" stroke="#d39281" stroke-width="3.5" stroke-linecap="round"/>
-              </svg>
+              <img src="./assets/generated/voice-k.png" alt="姶良市・K様" class="h-24 w-24 shrink-0 rounded-full bg-[#eef7e8] object-cover ring-4 ring-white shadow-md" />
               <div>
                 <h3 class="text-[1.8rem] font-bold text-brandGreen">姶良市・K様</h3>
                 <p class="mt-3 text-lg leading-9 text-zinc-700">スタッフの皆さんが丁寧で、家族にもやさしく寄り添ってくれます。</p>
@@ -545,14 +381,7 @@
 
           <article class="rounded-[1.6rem] border border-zinc-100 bg-white p-5 shadow-card">
             <div class="flex items-center gap-4">
-              <svg class="h-24 w-24 shrink-0 rounded-full bg-[#fff0ef] ring-4 ring-white shadow-md" viewBox="0 0 96 96" aria-hidden="true">
-                <circle cx="48" cy="48" r="48" fill="#fff0ef"/>
-                <ellipse cx="48" cy="38" rx="19" ry="22" fill="#f2ceb1"/>
-                <path d="M29 36c2-16 15-27 31-27 13 0 24 6 29 18-10-2-17-2-26 1-7-4-18-1-34 8Z" fill="#6f584f"/>
-                <path d="M27 77c4-17 18-27 36-27s31 10 36 27" fill="#eadad8"/>
-                <path d="M39 44c3-3 7-3 10 0M54 44c3-3 7-3 10 0" stroke="#4e413c" stroke-width="3" stroke-linecap="round"/>
-                <path d="M39 58c6 5 11 7 18 7 5 0 9-1 14-5" stroke="#d58d83" stroke-width="3.5" stroke-linecap="round"/>
-              </svg>
+              <img src="./assets/generated/voice-n.png" alt="霧島市・N様" class="h-24 w-24 shrink-0 rounded-full bg-[#fff0ef] object-cover ring-4 ring-white shadow-md" />
               <div>
                 <h3 class="text-[1.8rem] font-bold text-brandPink">霧島市・N様</h3>
                 <p class="mt-3 text-lg leading-9 text-zinc-700">急な相談にも迅速に対応していただき、本当に助かっています。</p>
@@ -581,46 +410,7 @@
           <span class="text-4xl font-bold tracking-wide text-brandBlue">ふくみーケア</span>
         </div>
         <p class="mt-5 text-xl leading-10 text-zinc-700">地域に寄り添う、<br />やさしい在宅ケアを。</p>
-
-        <svg class="mt-6 w-full max-w-[320px]" viewBox="0 0 320 110" aria-hidden="true">
-          <rect width="320" height="110" fill="none"/>
-          <path d="M0 96h320" stroke="#a7d6f3" stroke-width="3"/>
-          <g opacity=".95">
-            <ellipse cx="24" cy="84" rx="14" ry="26" fill="#90d1a0"/>
-            <rect x="20" y="85" width="8" height="21" rx="4" fill="#8bc3a0"/>
-            <ellipse cx="296" cy="84" rx="14" ry="26" fill="#90d1a0"/>
-            <rect x="292" y="85" width="8" height="21" rx="4" fill="#8bc3a0"/>
-          </g>
-          <g transform="translate(34 52)">
-            <rect x="0" y="20" width="56" height="26" rx="6" fill="#cfe5fb"/>
-            <path d="M-4 20 28 0l32 20" fill="#c4d9f1"/>
-            <rect x="10" y="28" width="12" height="18" rx="3" fill="#fff"/>
-            <rect x="30" y="28" width="12" height="10" rx="3" fill="#fff"/>
-          </g>
-          <g transform="translate(116 58)">
-            <rect x="0" y="16" width="48" height="24" rx="6" fill="#bfe1d0"/>
-            <path d="M-4 16 24 0l28 16" fill="#cbe8d4"/>
-            <rect x="10" y="22" width="10" height="18" rx="3" fill="#fff"/>
-            <rect x="27" y="22" width="10" height="10" rx="3" fill="#fff"/>
-          </g>
-          <g transform="translate(185 50)">
-            <rect x="0" y="22" width="60" height="28" rx="6" fill="#d7e8fb"/>
-            <path d="M-4 22 30 0l34 22" fill="#b8d7ef"/>
-            <rect x="11" y="30" width="12" height="20" rx="3" fill="#fff"/>
-            <rect x="32" y="30" width="14" height="12" rx="3" fill="#fff"/>
-          </g>
-          <g transform="translate(268 56)">
-            <rect x="0" y="18" width="28" height="20" rx="5" fill="#bee6c7"/>
-            <path d="M-3 18 14 4l17 14" fill="#a7d9b4"/>
-            <rect x="9" y="24" width="8" height="14" rx="3" fill="#fff"/>
-          </g>
-          <g opacity=".85">
-            <ellipse cx="80" cy="92" rx="10" ry="20" fill="#90d1a0"/>
-            <rect x="77" y="91" width="6" height="16" rx="3" fill="#8bc3a0"/>
-            <ellipse cx="164" cy="90" rx="11" ry="21" fill="#90d1a0"/>
-            <rect x="161" y="90" width="6" height="17" rx="3" fill="#8bc3a0"/>
-          </g>
-        </svg>
+        <img src="./assets/generated/footer-town-scene.svg" alt="街並みのイメージ" class="mt-6 w-full max-w-[320px]" />
       </div>
 
       <nav aria-label="フッターメニュー">
